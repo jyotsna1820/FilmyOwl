@@ -29,7 +29,7 @@ class Quotes extends \yii\db\ActiveRecord
     {
         return [
             [['quotes', 'movie_character', 'movie'], 'required'],
-            [['quotes', 'movie_character', 'movie'], 'string', 'max' => 45],
+            [['quotes', 'movie_character', 'movie'], 'string', 'max' => 500],
         ];
     }
 
