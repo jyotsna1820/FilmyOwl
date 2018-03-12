@@ -9,7 +9,7 @@ use Yii;
  *
  * @property integer $id
  * @property string $quotes
- * @property string $character
+ * @property string $movie_character
  * @property string $movie
  */
 class Quotes extends \yii\db\ActiveRecord
@@ -28,8 +28,8 @@ class Quotes extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['quotes', 'character', 'movie'], 'required'],
-            [['quotes', 'character', 'movie'], 'string', 'max' => 45],
+            [['quotes', 'movie_character', 'movie'], 'required'],
+            [['quotes', 'movie_character', 'movie'], 'string', 'max' => 45],
         ];
     }
 
@@ -41,7 +41,7 @@ class Quotes extends \yii\db\ActiveRecord
         return [
             'id' => 'ID',
             'quotes' => 'Quotes',
-            'character' => 'Character',
+            'movie_character' => 'movie_character',
             'movie' => 'Movie',
         ];
     }

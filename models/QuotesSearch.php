@@ -19,7 +19,7 @@ class QuotesSearch extends Quotes
     {
         return [
             [['id'], 'integer'],
-            [['quotes', 'character', 'movie'], 'safe'],
+            [['quotes', 'movie_character', 'movie'], 'safe'],
         ];
     }
 
@@ -63,7 +63,7 @@ class QuotesSearch extends Quotes
         ]);
 
         $query->andFilterWhere(['like', 'quotes', $this->quotes])
-            ->andFilterWhere(['like', 'character', $this->character])
+            ->andFilterWhere(['like', 'movie_character', $this->movie_character])
             ->andFilterWhere(['like', 'movie', $this->movie]);
 
         return $dataProvider;
