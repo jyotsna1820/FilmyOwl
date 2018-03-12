@@ -19,7 +19,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'quotes') ?>
 
-    <?= $form->field($model, 'character') ?>
+    <?= $form->field($model, 'movie_character') ?>
 
     <?= $form->field($model, 'movie') ?>
 

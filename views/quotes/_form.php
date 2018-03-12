@@ -14,7 +14,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'quotes')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'character')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'movie_character')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'movie')->textInput(['maxlength' => true]) ?>
 
